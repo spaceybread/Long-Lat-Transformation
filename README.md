@@ -1,0 +1,1 @@
+Attempting to convert coordinates from images to Earth lat/long coordinates and in reverse
