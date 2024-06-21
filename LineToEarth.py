@@ -5,7 +5,7 @@ def imageToEarth(image_line, image_element):
 
     # =====| need to find these values |=====
     pole_line, pole_element = 0, 0
-    scale = 5
+    scale = 10
     theta_max = math.pi / 2
     std_long, std_colat = math.pi / 4, math.pi / 4
     R = 6378 # earth radius in km

@@ -5,14 +5,14 @@ def earthToImage(lat, lon):
 
     # =====| need to find these values |=====
     pole_line, pole_element = 0, 0
-    scale = 5
+    scale = 10
     theta_max = math.pi / 2
     std_long, std_colat = math.pi / 4, math.pi / 4
     R = 6378 # earth radius in km
     F_dr = math.pi / 180 #
     # =======================================
     
-    colat = math.pi / 2 - F_dr * lat
+    colat = 90 - F_dr * lat
     in_lon = -1 * F_dr * lon
     
     if in_lon <= -1 * math.pi:
