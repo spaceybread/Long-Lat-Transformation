@@ -1,5 +1,6 @@
 import math
 
+# Image coordiantes to Earth coordinates
 def imageToEarth(image_line, image_element):
 
     # =====| need to find these values |=====
