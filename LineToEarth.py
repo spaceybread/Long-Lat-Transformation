@@ -25,10 +25,10 @@ def imageToEarth(image_line, image_element):
     
     lon = std_long + ( theta / math.cos(std_colat) )
     
-    if lon <= -1 * math.pi:
+    if lon < -1 * math.pi:
         lon += 2 * math.pi
     
-    if lon >= math.pi:
+    if lon > math.pi:
         lon += -2 * math.pi
     
     colat = 2 * math.atan( math.tan( std_colat / 2) * (rad / (R * math.tan(std_colat)) ** (1 / math.cos(std_colat))))
