@@ -4,12 +4,12 @@ import math
 def earthToImage(lat, lon):
 
     # =====| need to find these values |=====
-    pole_line, pole_element = 0, 0
-    scale = 10
-    theta_max = math.pi / 2
-    std_long, std_colat = math.pi / 4, math.pi / 4
-    R = 6378 # earth radius in km
     F_dr = math.pi / 180 #
+    pole_line, pole_element = 0, 0
+    scale = 13
+    theta_max = math.pi / 2
+    std_long, std_colat = 1 / 100000000 , 1 / 100000000 # need to be as close to 0 as possible without being 0 (?)
+    R = 6378 # earth radius in km
     # =======================================
     
     colat = math.pi/2 - F_dr * lat
